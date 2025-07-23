@@ -13,7 +13,7 @@ app.use(cors({
   origin: [
     "http://localhost:3000",
     "https://taskweb-vert.vercel.app",
-    "https://taskweb-dyu9535lz-astech01s-projects.vercel.app"
+    "https://taskweb-theta.vercel.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true
