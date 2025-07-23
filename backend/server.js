@@ -10,8 +10,14 @@ connectDB();
 const app= express()
 
 app.use(cors({
-  origin: "https://taskweb-vert.vercel.app"
-}))
+  origin: [
+    "http://localhost:3000",
+    "https://taskweb-vert.vercel.app",
+    "https://taskweb-dyu9535lz-astech01s-projects.vercel.app"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true
+}));
 app.use(express.json())
 
 app.use('/api/tasks',taskRoutes)
